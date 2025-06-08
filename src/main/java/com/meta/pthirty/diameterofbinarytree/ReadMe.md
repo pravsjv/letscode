@@ -34,6 +34,10 @@ Example:
 
 **Complexities:**
 - Time Complexity:
-  - O(N) where N is the number of nodes. Worst case happens if its a skewed tree
+  - O(N) where N is the number of nodes. Worst case happens if it's a skewed tree
 - Space Complexity:
-  - O(N) where N is the number of nodes. Worst case happens if its a skewed tree.
+  - O(N) where N is the number of nodes. Worst case happens if it's a skewed tree.
+
+**Variant1 Notes:**
+    - While finding diameter of binary tree(edges version), the diameter is updated as Math.max(diameter,leftHeigh+rightheight);
+    - For this variant1, if diameter is the number of nodes, we update the diameter as Math.max(diameter, leftHeight+rightHeight+1);
